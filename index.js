@@ -82,3 +82,14 @@ function flyToStore(store) {
         .openOn(map);
     }, 2000);
 }
+
+document.getElementById('searchBox').addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const items = document.querySelectorAll('.shop-item');
+  
+    items.forEach(item => {
+      const text = item.innerText.toLowerCase();
+      item.parentElement.style.display = text.includes(query) ? 'block' : 'none';
+    });
+  });
+  

@@ -23,9 +23,19 @@ main {
 .store-list .heading {
   background: #ff6900;
   color: #fff;
+  display: flex;
 }
 .store-list .heading h2 {
   padding: 1rem;
+}
+
+.store-list .heading input{
+  background: #ffffff;
+  color: #000000;
+  padding: 10px;
+  margin-top: 12px;
+  margin-left: 30px;
+  border-radius: 30px;
 }
 ::-webkit-scrollbar {
   width: 3px;
